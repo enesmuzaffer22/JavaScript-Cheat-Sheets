@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Generally, we using "var" and "let" for declare a variable. For example:
+    
+    var x = 5;
+    let name = "James";
+
+    But these two keywords are now same. There are a few diffrences between of them. Let's explain:
+
+    You can use "var" keyword everywhere on your codes. But you can't use this situation for "let" keyword. Because "let" is block keyword.
+    You can use "let" keyword for one block, you can't use at outside of the block. Also, "let" keyword is a new keyword (since 2015). So,
+    if you want to support your code for old browsers, you should use "var" keyword.
+    
+    Another diffrence is, you can't declare a same variable more than one with "let" keyword.
+
+    And one more diffrence, you can't use any variable before declare with "let" keyword. But you can with "var" keyword. Let's see with
+    an example:
+    
+    -->
+
+    <script>
+        var a = 1;
+        document.write(a + " ");
+
+        let b = 2;
+        document.write(b + " ");
+
+        document.write(c + " "); //write "var c" before definition will return "undefined".
+        var c = 3;
+
+        document.write(d + " "); //giving error
+        let d = 4;
+    </script>
+</body>
+
+</html>

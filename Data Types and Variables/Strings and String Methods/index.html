@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var str = "Hello World !"; //declare string
+        document.write("str: " + str + "<br>");
+        
+        var len = str.length; //length of string
+        document.write("str length: " + len + "<br>");
+
+        var str2 = str + " I'm learning coding"; //add string to any string
+        document.write("str2: " + str2 + "<br>");
+
+        document.write("str2 with uppercase: " + str2.toLocaleUpperCase() + "<br>"); //all chars turn to upper case chars. Also you can turn to lower case with "toLocaleLowerCase()" method.
+
+        if(str2.indexOf("coding") != -1) { //You can check if a string exists in a string with the "indexOf()" method. If method return "-1", this string doesn't exist.
+            document.write("\'coding\' word exists int str" + "<br>");
+        }
+
+        var str3 = str2.replace("World", "Guys"); //You can replace any string to any string.
+        document.write("str3: " + str3 + "<br>");
+
+        var index = str3.indexOf('!');
+
+        var str4 = str3.substring(index + 1); //You can cut any string with "substring()" method.
+        document.write(str4 + "<br>");
+    </script>
+</body>
+</html>

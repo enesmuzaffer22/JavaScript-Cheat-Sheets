@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="p1">Paragraph1</p>
+    <p id="p2">Paragraph2</p>
+    <h1>header1</h1>
+
+    <script>
+        /*ClassName and TagName are an array. But Id can not be an array. Also Id names are must be unique.*/
+
+        document.getElementsByClassName("p1")[0].innerText = "Hello world 1";
+        document.getElementById("p2").innerHTML = "Hello world 2";
+        document.getElementsByTagName("h1")[0].innerHTML = "Hello world 3"
+    </script>
+</body>
+</html>

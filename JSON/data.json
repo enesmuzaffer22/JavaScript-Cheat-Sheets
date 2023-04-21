@@ -1,0 +1,16 @@
+{
+    "students": [
+        {
+            "fullname": "Jack Ryan",
+            "studentID": "645232"
+        },
+        {
+            "fullname": "Anna Green",
+            "studentID": "546342"
+        },
+        {
+            "fullname": "Peter Jones",
+            "studentID": "948832"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /* Classes are templates for objects. 
+        
+        Use of class:
+
+        class ClassName {
+            constructor(variables) {
+                ...declarations variables
+            }
+
+            functionName(params) {
+                ...codes
+            }
+        }
+
+        */
+
+        class Student {
+            constructor(name, schoolID) { //declarations variables for objects
+                this.name = name;
+                this.schoolID = schoolID;
+            }
+
+            getStudentInformation() { // return information for student object
+                var result = this.name + " " + this.schoolID;
+                return result;
+            }
+        }
+
+        const newStudent = new Student("Jack Ryan", 153212);
+        document.write(newStudent.getStudentInformation());
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //Arrays are dynamic in javascript. You can add or remove any element. Also if you want, you can sort the array.
+
+        const newArray = [4, 3, 5, 9, 1]; //create new array;
+        document.write(newArray + "<br>");
+
+        newArray.sort(); //sort array
+        document.write(newArray + "<br>");
+
+        newArray.pop(); //remove last element from array
+        document.write(newArray + "<br>");
+
+        newArray.push(10); //add new element to end of array (10)
+        document.write(newArray + "<br>");
+
+        const index = newArray.indexOf(5); //remove "5" element from array
+        if (index > -1) { 
+            newArray.splice(index, 1);
+        }
+        document.write(newArray + "<br>");  
+    </script>
+</body>
+
+</html>
